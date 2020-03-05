@@ -12,9 +12,9 @@ library(tidyverse)
 
 ```{r}
 ggplot(iris, aes(x = Petal.Length)) +
-  geom_histogram()
+  geom_histogram(fill = "blue") -> myplot
 
-ggsave("practice_plot.png")
+ggsave("practice_plot.png", myplot)
 ```
 
 
